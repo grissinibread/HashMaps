@@ -7,9 +7,19 @@ import java.util.Set;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String str = "green apple";
-        CharacterFinder cF = new CharacterFinder();
+//        Map<Integer, String> map = new HashMap<>();
+//        map.put(1, "Mosh");
+//        System.out.println(hash("123456-A"));
 
-        System.out.println(cF.findFirstRepeatedChar(str));
+        String str = "orange";
+        System.out.println(str.hashCode());
+    }
+
+    public static int hash(String key) {
+        int hash = 0;
+        for(var ch : key.toCharArray())
+            hash += ch;
+
+        return hash % 100;
     }
 }
