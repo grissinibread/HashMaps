@@ -1,18 +1,18 @@
-import java.util.HashSet;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//        Map<Integer, String> map = new HashMap<>();
-//        map.put(1, "Mosh");
-//        System.out.println(hash("123456-A"));
+        int[] numbers = {1, 2, 3, 4};
 
-        String str = "orange";
-        System.out.println(str.hashCode());
+        HashTableExercises exercises = new HashTableExercises();
+        System.out.println(exercises.mostFrequent(numbers));
+
+        exercises.countPairsWithDiff(numbers, 2);
+
+
+        System.out.println(Arrays.toString(exercises.twoSum(numbers, 7)));
     }
 
     public static int hash(String key) {
